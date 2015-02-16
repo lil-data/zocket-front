@@ -1,9 +1,6 @@
 var socket = io('https://zocket.herokuapp.com/');
 //var socket = io('http://localhost:5000');
 
-//setInterval(function(){
-//    socket.emit("slider-change", Math.random());
-//},1000);
 var slider = null;
 socket.on('slider-change', function(newval){
    slider.value = newval;
